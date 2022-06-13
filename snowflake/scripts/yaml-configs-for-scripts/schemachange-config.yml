@@ -1,12 +1,7 @@
 config-version: 1
 
-<<<<<<< HEAD
 vars:
   env: 'DEV'
 =======
 
-# Define values for the variables to replaced in change scripts
 
-vars:  
-  env: 'DEV'
->>>>>>> 7ca0e17c2abf32fdc2713a84234b8b6258b57144
