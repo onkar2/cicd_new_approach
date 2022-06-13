@@ -4,6 +4,7 @@ name: sf-devops-script-deployment
 on:
   push:
     branches:
+      - main
       - DEV
       - TEST
       - DEMO
@@ -109,6 +110,7 @@ jobs:
           SF_DATABASE: ${{ secrets.TEST_DATABASE }}
           SNOWFLAKE_PASSWORD: ${{ secrets.TEST_PASSWORD }}          
           BRANCH_NAME_FOR_CONFIG: ${{ steps.extract_branch.outputs.branch }}
+          
         
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
